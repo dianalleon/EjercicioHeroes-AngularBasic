@@ -1,0 +1,13 @@
+
+<h1>Información de Heroes</h1>
+
+<div>
+
+    <li *ngFor="let heroe of heroes" style="display: flex;">
+       <td (click)="pintarColor()">
+            {{heroe.nombre}}
+        </td> 
+    </li>
+</div>
+
+<app-casas [heroes]="heroes"></app-casas>
